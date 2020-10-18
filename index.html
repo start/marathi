@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 
+<html lang=en>
+
 <meta charset=utf-8>
 <title>Start Marathi!</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="common.css" rel="stylesheet">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link href=common.css rel=stylesheet>
+<meta name=theme-color content=red>
+<style>
+    dl {
+        columns: 100px 3;
+    }
+
+    dt,
+    dd {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    dt {
+        width: 25px;
+    }
+
+    dl>div {
+        white-space: nowrap;
+    }
+</style>
 
 <main>
     <h1>Marathi is hard.</h1>
@@ -14,81 +37,51 @@
     </p>
 
     <h2>Vowels</h2>
-    <style>
-        dl.char-table {
-            columns: 100px 3;
-        }
-
-        dl.char-table dt,
-        dl.char-table dd {
-            display: inline-block;
-            margin: 0;
-            padding: 0;
-        }
-
-        .char-table dt {
-            width: 25px;
-        }
-
-        .char-table > div {
-            break-inside: avoid-column;
-        }
-    </style>
-    <dl class='char-table'>
+    <dl>
         <div>
-            <div>
-                <dt lang=mr>अ</dt>
-                <dd>a</dd>
-            </div>
-            <div>
-                <dt lang=mr>आ</dt>
-                <dd>a, aa</dd>
-            </div>
+            <dt lang=mr>अ</dt>
+            <dd>a</dd>
         </div>
         <div>
-            <div>
-                <dt lang=mr>ए</dt>
-                <dd>e</dd>
-            </div>
-            <div>
-                <dt lang=mr>ऐ</dt>
-                <dd>ai</dd>
-            </div>
+            <dt lang=mr>आ</dt>
+            <dd>a, aa</dd>
         </div>
         <div>
-            <div>
-                <dt lang=mr>इ</dt>
-                <dd>i</dd>
-            </div>
-            <div>
-                <dt lang=mr>ई</dt>
-                <dd>i, ii, ee</dd>
-            </div>
+            <dt lang=mr>ए</dt>
+            <dd>e</dd>
         </div>
         <div>
-            <div>
-                <dt lang=mr>ओ</dt>
-                <dd>o</dd>
-            </div>
-            <div>
-                <dt lang=mr>औ</dt>
-                <dd>au</dd>
-            </div>
+            <dt lang=mr>ऐ</dt>
+            <dd>ai</dd>
         </div>
         <div>
-            <div>
-                <dt lang=mr>उ</dt>
-                <dd>u</dd>
-            </div>
-            <div>
-                <dt lang=mr>ऊ</dt>
-                <dd>u, uu, oo</dd>
-            </div>
+            <dt lang=mr>इ</dt>
+            <dd>i</dd>
+        </div>
+        <div>
+            <dt lang=mr>ई</dt>
+            <dd>i, ii, ee</dd>
+        </div>
+        <div>
+            <dt lang=mr>ओ</dt>
+            <dd>o</dd>
+        </div>
+        <div>
+            <dt lang=mr>औ</dt>
+            <dd>au</dd>
+        </div>
+        <div>
+            <dt lang=mr>उ</dt>
+            <dd>u</dd>
+        </div>
+        <div>
+            <dt lang=mr>ऊ</dt>
+            <dd>u, uu, oo</dd>
         </div>
     </dl>
-    
+
     <h2>Consonants</h2>
-    <dl class='char-table'>
+    <dl>
         <div>
             <dt lang=mr>ब</dt>
             <dd>b</dd>
@@ -220,7 +213,7 @@
     </dl>
 
     <h2>Semi-vowels</h2>
-    <dl class='char-table'>
+    <dl>
         <div>
             <dt lang=mr>अं</dt>
             <dd>m, n</dd>
@@ -235,3 +228,5 @@
         </div>
     </dl>
 </main>
+
+</html>
